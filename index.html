@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialogflow Chatbot Integration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://plus.unsplash.com/premium_photo-1669839137417-caaf1a4e00a9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMjF8fHxlbnwwfHx8fHw%3D');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+       
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 30px;
+            background-image: url('C:/Users/mutal/Downloads/icon.jpg');
+            background-size: cover;
+            border-radius: 50%;
+        }
+
+        .chat-icon {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 30px;
+            background-image: url('C:/Users/mutal/Downloads/chatbot-removebg-preview.png');
+            background-size: cover;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="chatbot-container">
+    <div class="logo"></div>
+    <div class="chat-icon"></div>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="Buddy"
+      agent-id="4ad7b460-3896-4b48-a17e-200a88006663"
+      language-code="en"
+    ></df-messenger>
+</div>
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+</body>
+</html>
